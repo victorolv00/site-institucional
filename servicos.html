@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos Serviços — Inspeção e Engenharia</title>
+    <title>Nossos Serviços — Soluções Estratégicas</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -15,7 +15,7 @@
                 <nav class="nav-desktop">
                     <a href="index.html">Início</a>
                     <a href="portfolio.html">Portfólio</a>
-                    <button class="btn-nav btn-abrir-contato">Solicitar Orçamento</button>
+                    <button class="btn-nav btn-abrir-contato">Solicitar Proposta</button>
                 </nav>
             </div>
         </div>
@@ -23,7 +23,7 @@
 
     <main>
         <section class="pagina-titulo revelar">
-            <div class="conteiner"><h1>Soluções Especializadas</h1></div>
+            <div class="conteiner"><h1>Nossas Soluções</h1></div>
         </section>
 
         <section class="detalhe-servico revelar">
@@ -31,10 +31,25 @@
                 <div class="detalhe-grid">
                     <div class="detalhe-img"></div>
                     <div class="detalhe-texto">
-                        <h2>Mapeamento 3D</h2>
-                        <p>Levantamento planialtimétrico e geração de modelos digitais de terreno de alta precisão. Aplicamos técnicas avançadas de topografia para projetos de engenharia civil, parcelamento de solo e elaboração de plantas cadastrais e de situação.</p>
-                        <button class="btn btn-primario btn-contratar-servico" data-service="Mapeamento">Orçamento Mapeamento</button>
+                        <h2>Consultoria Estratégica</h2>
+                        <p>Começamos entendendo de verdade onde sua empresa está e onde quer chegar. Mapeamos processos, identificamos gargalos e construímos um plano de ação realista — com prioridades claras, responsáveis definidos e metas mensuráveis desde o primeiro dia.</p>
+                        <p>Não entregamos relatório de gaveta. Ficamos ao lado da equipe até os resultados aparecerem.</p>
+                        <button class="btn btn-primario btn-contratar-servico" data-service="Consultoria">Solicitar Proposta</button>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detalhe-servico revelar">
+            <div class="conteiner">
+                <div class="detalhe-grid detalhe-grid--invertido">
+                    <div class="detalhe-texto">
+                        <h2>Gestão de Projetos</h2>
+                        <p>Projetos falham por falta de método, não de intenção. Aplicamos frameworks ágeis e tradicionais de acordo com o contexto — garantindo visibilidade do progresso, gestão de riscos e comunicação clara entre todas as partes.</p>
+                        <p>Entregamos no prazo e no orçamento combinados, com documentação completa e transição sem atrito.</p>
+                        <button class="btn btn-primario btn-contratar-servico" data-service="Projetos">Solicitar Proposta</button>
+                    </div>
+                    <div class="detalhe-img"></div>
                 </div>
             </div>
         </section>
@@ -44,22 +59,10 @@
                 <div class="detalhe-grid">
                     <div class="detalhe-img"></div>
                     <div class="detalhe-texto">
-                        <h2>Inspeção Predial</h2>
-                        <p>Análise técnica completa de fachadas, estruturas e patologias construtivas. Emitimos laudo assinado por engenheiro responsável, com registro fotográfico detalhado, classificação das anomalias e recomendações de intervenção priorizadas.</p>
-                        <button class="btn btn-primario btn-contratar-servico" data-service="Inspecao">Orçamento Inspeção</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="detalhe-servico revelar">
-            <div class="conteiner">
-                <div class="detalhe-grid">
-                    <div class="detalhe-img"></div>
-                    <div class="detalhe-texto">
-                        <h2>Termografia</h2>
-                        <p>Diagnóstico por câmera infravermelha para detecção de infiltrações, falhas elétricas e anomalias térmicas em tempo real. Sem necessidade de demolição ou intervenção estrutural — identificação precisa antes que o problema se agrave.</p>
-                        <button class="btn btn-primario btn-contratar-servico" data-service="Termografia">Orçamento Termografia</button>
+                        <h2>Transformação Digital</h2>
+                        <p>Digitalizar por digitalizar não adianta. Identificamos os processos que mais consomem tempo e dinheiro e implementamos ferramentas que a sua equipe realmente vai usar — com treinamento, suporte e acompanhamento pós-implantação.</p>
+                        <p>O resultado: operação mais rápida, menos erro manual e dados confiáveis para decisões melhores.</p>
+                        <button class="btn btn-primario btn-contratar-servico" data-service="Digital">Solicitar Proposta</button>
                     </div>
                 </div>
             </div>
@@ -70,17 +73,17 @@
         <div class="modal-conteudo modal-conteudo-contato">
             <button class="fechar-modal fechar-contato">&times;</button>
             <div class="modal-header-logo">EMPRESA DE SERVIÇOS</div>
-            <h3>Solicitar Orçamento</h3>
+            <h3>Solicitar Proposta</h3>
             <form class="form-contato" id="formContato">
                 <input type="text" placeholder="Nome" required>
                 <input type="tel" placeholder="Telefone" required>
                 <select id="selectServicoModal" required>
-                    <option value="" disabled selected>Selecione...</option>
-                    <option value="Mapeamento">Mapeamento 3D</option>
-                    <option value="Inspecao">Inspeção Predial</option>
-                    <option value="Termografia">Termografia</option>
+                    <option value="" disabled selected>Selecione o serviço...</option>
+                    <option value="Consultoria">Consultoria Estratégica</option>
+                    <option value="Projetos">Gestão de Projetos</option>
+                    <option value="Digital">Transformação Digital</option>
                 </select>
-                <textarea placeholder="Mensagem" rows="3"></textarea>
+                <textarea placeholder="Descreva seu desafio ou objetivo" rows="3"></textarea>
                 <button type="submit" class="btn btn-primario w-100">Enviar Mensagem</button>
             </form>
         </div>
