@@ -304,7 +304,9 @@ section { padding: 5rem 0; }
 .footer__contact { display: flex; flex-direction: column; gap: 0.6rem; }
 .footer__contact span { font-size: 0.88rem; opacity: 0.75; }
 .footer__bottom { padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; }
-.footer__copy  { font-size: 0.78rem; opacity: 0.4; }
+.footer__copy   { font-size: 0.78rem; opacity: 0.4; }
+.footer__credit { font-size: 0.78rem; opacity: 0.55; }
+.footer__credit a { color: var(--bg); text-decoration: underline; text-underline-offset: 3px; }
 
 /* ==========================================================================
    SCROLL REVEAL
